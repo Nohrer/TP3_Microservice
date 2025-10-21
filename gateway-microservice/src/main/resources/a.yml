@@ -1,0 +1,12 @@
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: r1
+          uri: lb://CUSTOMER-MICROSERVICE
+          predicates:
+            - Path=/api/customers/**
+        - id: r2
+          uri: lb://INVENTORY-MICROSERVICE
+          predicates:
+            - Path=/api/products/**
