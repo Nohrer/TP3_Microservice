@@ -1,13 +1,16 @@
 package org.sid.customermicroservice;
 
+import org.sid.customermicroservice.config.CustomerConfigParams;
 import org.sid.customermicroservice.entities.Customer;
 import org.sid.customermicroservice.repository.CustomerRepository;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Bean;
 
 @SpringBootApplication
+@EnableConfigurationProperties(CustomerConfigParams.class)
 public class CustomerMicroserviceApplication {
 
     public static void main(String[] args) {
