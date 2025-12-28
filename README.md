@@ -6,7 +6,6 @@ Table of Contents
 
 - Features
 - Technologies
-- Architecture
 - Getting Started
 - API Documentation
 - Testing
@@ -38,22 +37,7 @@ Technologies
 - SpringDoc OpenAPI (Swagger)
 - Maven
 
-Architecture
 
-The project follows a layered architecture with best practices:
-
-┌─────────────────────────────────────────┐
-│         Presentation Layer              │
-│  (REST Controllers, GraphQL Controllers)│
-├─────────────────────────────────────────┤
-│           Service Layer                 │
-│      (Business Logic + DTOs)            │
-├─────────────────────────────────────────┤
-│         Repository Layer                │
-│     (Spring Data JPA Repositories)      │
-├─────────────────────────────────────────┤
-│          Database Layer                 │
-│         (H2 In-Memory DB)               │
 └─────────────────────────────────────────┘
 
 Design Patterns Used
